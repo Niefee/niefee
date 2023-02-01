@@ -15,9 +15,22 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-![profile](https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/limitstodocsascode.svg)
+<div align="center">
+    <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/limitstodocsascode.svg" height="200"/>
+</div>
+
+<div align="center">
+    <img src="https://github-readme-stats.vercel.app/api?username=Niefee&bg_color=30,e96443,904e95&title_color=fff&text_color=fff&show_icons=true&theme=radical" />
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=Niefee&theme=radical&show_icons=true&border=e4e2e2" />
+</div>
+
+<div>
+
+</div>
 
 <p align="center"> 
-  Visitor count<br>
-  <img src="https://profile-counter.glitch.me/Niefee/count.svg" />
+  <div align="center">Visitor count</div>
+  <div align="center">
+    <img src="https://profile-counter.glitch.me/Niefee/count.svg"/>
+  </div> 
 </p>
