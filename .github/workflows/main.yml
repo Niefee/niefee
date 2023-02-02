@@ -7,6 +7,11 @@ on:
     - cron: "*/10 * * * *"
   workflow_dispatch:
 
+  # run on every push on the master branch
+  push:
+    branches:
+    - master
+
 jobs:
   build:
     runs-on: ubuntu-latest
