@@ -5,16 +5,11 @@ name: Generate Snake
 on:
   # run automatically every 12 hours
   schedule:
-    - cron: "*/10 * * * *" 
+    - cron: "*/5 * * * *" 
   
   # allows to manually run the job at any time
   workflow_dispatch:
   
-  # run on every push on the master branch
-  push:
-    branches:
-    - master
-    
 
 jobs:
   build:
@@ -33,7 +28,7 @@ jobs:
           svg_out_path: ./assets/github-contribution-grid-snake.svg
 
       - name: Push to GitHub
-        uses: EndBug/add-and-commit@v7.2.1
+        uses: EndBug/add-and-commit@v9.1.1
         with:
           branch: master
           message: 'Generate Contribution Snake'
