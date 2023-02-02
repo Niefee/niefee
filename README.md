@@ -19,9 +19,9 @@ Here are some ideas to get you started:
     <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/limitstodocsascode.svg" height="200"/>
 </div>
 
-<p align="center" style="display:flex;align-items:center;justify-content:space-between;">
-    <img style="margin:5px;height:180px;" src="https://github-readme-stats.vercel.app/api?username=Niefee&bg_color=30,e96443,904e95&title_color=fff&text_color=fff&show_icons=true&theme=radical" />
-    <img style="margin:5px;height:180px;" src="https://github-readme-streak-stats.herokuapp.com/?user=Niefee&theme=radical&show_icons=true&border=e4e2e2" />
+<p align="center" style="height: 180px;">
+    <img style="width:49%;height:100%;" src="https://github-readme-stats.vercel.app/api?username=Niefee&bg_color=30,e96443,904e95&title_color=fff&text_color=fff&show_icons=true&theme=radical" />
+    <img style="width:49%;height:100%;" src="https://github-readme-streak-stats.herokuapp.com/?user=Niefee&theme=radical&show_icons=true&border=e4e2e2" />
 </p>
 
 <p align="center"> 
