@@ -5,11 +5,15 @@ name: Generate Snake
 on:
   # run automatically every 12 hours
   schedule:
-    - cron: "* */12 * * *" 
+    - cron: "30 */12 * * *" 
   
   # allows to manually run the job at any time
   workflow_dispatch:
   
+  # 推送时重新运行程序
+  push:
+    branches:
+    - master
 
 jobs:
   build:
@@ -31,4 +35,4 @@ jobs:
         uses: EndBug/add-and-commit@v9
         with:
           branch: master
-          message: 'Generate Contribution Snake'
+          message: 'Generate Github contribution heatmap animation'
