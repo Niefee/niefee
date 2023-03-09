@@ -30,7 +30,7 @@ Here are some ideas to get you started:
 <br/>
 
 <p align="center" style="height: 180px;">
-    <img style="height:10rem" src="https://github-readme-stats-weld-kappa.vercel.app/api?username=Niefee&bg_color=30,e96443,904e95&title_color=fff&text_color=fff&show_icons=true&theme=radical" />
+    <img style="height:10rem" src="https://github-readme-stats-git-master-niefee.vercel.app/api?username=Niefee&bg_color=30,e96443,904e95&title_color=fff&text_color=fff&show_icons=true&theme=radical" />
     <img style="height:10rem;" src="https://github-readme-streak-stats.herokuapp.com/?user=Niefee&theme=radical&show_icons=true&border=e4e2e2" />
 </p>
 
