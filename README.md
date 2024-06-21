@@ -29,10 +29,16 @@ Here are some ideas to get you started:
 
 <br/>
 
-<p align="center" style="height: 180px;">
-    <img style="height:10rem" src="https://niefee-readme-stats.vercel.app/api?username=Niefee&bg_color=30,e96443,904e95&title_color=fff&text_color=fff&show_icons=true&theme=radical" />
-    <img style="height:10rem;" src="https://github-readme-streak-stats.herokuapp.com/?user=Niefee&theme=radical&show_icons=true&border=e4e2e2" />
-</p>
+<div align="center">
+    <a href="https://next.ossinsight.io/widgets/official/compose-user-dashboard-stats?user_id=10347495" target="_blank" style="display: block" align="center">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://next.ossinsight.io/widgets/official/compose-user-dashboard-stats/thumbnail.png?user_id=10347495&image_size=auto&color_scheme=dark" width="771" height="auto">
+        <img alt="Dashboard stats of @Niefee" src="https://next.ossinsight.io/widgets/official/compose-user-dashboard-stats/thumbnail.png?user_id=10347495&image_size=auto&color_scheme=dark" width="771" height="auto">
+      </picture>
+    </a>
+</div>
+
+
 
 <div align="center">
     <picture align="center">
