@@ -50,10 +50,11 @@ Here are some ideas to get you started:
     </picture>
 </div>
 
-
+<!--
 <p align="center"> 
   <div align="center">Visitor count</div>
   <div align="center">
     <img src="https://profile-counter.glitch.me/Niefee/count.svg"/>
   </div> 
 </p>
+-->
