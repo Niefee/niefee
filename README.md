@@ -1,6 +1,5 @@
 ### Hi there 👋
 
-<!--
 **Niefee/niefee** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
@@ -40,8 +39,6 @@ Here are some ideas to get you started:
     </a>
 </div>
 
-
-
 <div align="center">
     <picture align="center">
       <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Niefee/niefee/master/assets/github-contribution-grid-snake.svg">
@@ -49,12 +46,8 @@ Here are some ideas to get you started:
       <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Niefee/niefee/master/assets/github-contribution-grid-snake.svg">
     </picture>
 </div>
+ 
+<div align="right">
+    <img alt="Dashboard stats of @Niefee" src="https://card.net.coffee/v1/card.svg?sticker=random&w=480" width="480" height="auto">
+</div>
 
-<!--
-<p align="center"> 
-  <div align="center">Visitor count</div>
-  <div align="center">
-    <img src="https://profile-counter.glitch.me/Niefee/count.svg"/>
-  </div> 
-</p>
--->
