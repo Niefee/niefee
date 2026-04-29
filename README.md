@@ -52,7 +52,7 @@ Here are some ideas to get you started:
 <br/>
 
 
-<div align="right">
-    <img alt="Dashboard stats of @Niefee" src="https://card.net.coffee/v1/card.svg?style=sunset&sticker=sunflower&w=360" width="480" height="auto">
+<div align="center">
+    <img alt="Dashboard stats of @Niefee" src="https://card.net.coffee/v1/card.svg?style=sunset&sticker=sunflower&w=600" width="600" height="auto">
 </div>
 
