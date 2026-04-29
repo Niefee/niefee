@@ -48,7 +48,11 @@ Here are some ideas to get you started:
     </picture>
 </div>
  
+<br/>
+<br/>
+
+
 <div align="right">
-    <img alt="Dashboard stats of @Niefee" src="https://card.net.coffee/v1/card.svg?style=laser&sticker=sunflower&w=360" width="480" height="auto">
+    <img alt="Dashboard stats of @Niefee" src="https://card.net.coffee/v1/card.svg?style=sunset&sticker=sunflower&w=360" width="480" height="auto">
 </div>
 
