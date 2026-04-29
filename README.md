@@ -49,6 +49,6 @@ Here are some ideas to get you started:
 </div>
  
 <div align="right">
-    <img alt="Dashboard stats of @Niefee" src="https://card.net.coffee/v1/card.svg?sticker=random&w=480" width="480" height="auto">
+    <img alt="Dashboard stats of @Niefee" src="https://card.net.coffee/v1/card.svg?style=laser&sticker=sunflower&w=360" width="480" height="auto">
 </div>
 
