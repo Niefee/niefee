@@ -18,7 +18,7 @@ Here are some ideas to get you started:
 ![](https://komarev.com/ghpvc/?username=Niefee&base=30000&color=orange&label=PROFILE+VIEWS+)
 
 <div align="center">
-    <img src="https://raw.githubusercontent.com/Niefee/niefee/master/assets/fly.webp" height="120px" />
+    <img src="https://raw.githubusercontent.com/Niefee/niefee/refs/heads/master/assets/xiao-yang.svg" height="120px" />
 </div>
 
 <br/>
