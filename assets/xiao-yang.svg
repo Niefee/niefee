@@ -57,6 +57,10 @@
       <animateTransform attributeName="transform" type="translate" values="780,0;-160,0" dur="22s" begin="-5s" repeatCount="indefinite"/>
       <g transform="translate(320,44) scale(0.16)"><use href="#cloud"/></g>
     </g>
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="780,0;-160,0" dur="38s" begin="-9s" repeatCount="indefinite"/>
+      <g transform="translate(384,58) scale(0.13)"><use href="#cloud" opacity="0.7"/></g>
+    </g>
   </g>
 
   <!-- 小鸟 -->
@@ -76,12 +80,14 @@
 
   <!-- 远处的树 -->
   <g>
-    <ellipse cx="486" cy="92" rx="7" ry="8" fill="#8fc08a"/>
-    <rect x="484.8" y="94" width="2" height="7" fill="#7ba781"/>
-    <ellipse cx="508" cy="95" rx="5.5" ry="6.5" fill="#83b87f"/>
-    <rect x="506.9" y="97" width="1.8" height="6" fill="#7ba781"/>
-    <ellipse cx="552" cy="90" rx="6" ry="7" fill="#8fc08a"/>
-    <rect x="550.9" y="92" width="2" height="7" fill="#7ba781"/>
+    <ellipse cx="486" cy="90" rx="9" ry="10" fill="#8bbd86"/>
+    <rect x="484.6" y="92" width="2.4" height="8" fill="#75a37a"/>
+    <ellipse cx="512" cy="94" rx="7" ry="8" fill="#7fb47c"/>
+    <rect x="510.6" y="96" width="2.2" height="7" fill="#75a37a"/>
+    <ellipse cx="552" cy="88" rx="8" ry="9" fill="#8bbd86"/>
+    <rect x="550.6" y="90" width="2.2" height="8" fill="#75a37a"/>
+    <ellipse cx="392" cy="97" rx="9" ry="6" fill="#9ccb95"/>
+    <ellipse cx="410" cy="99" rx="7" ry="5" fill="#a5d19d"/>
   </g>
 
   <!-- 远处的风车 -->
@@ -127,15 +133,15 @@
   </g>
 
   <!-- 车下投影 -->
-  <ellipse cx="84" cy="112" rx="76" ry="5.5" fill="url(#shadowG)"/>
+  <ellipse cx="92" cy="112" rx="54" ry="4.5" fill="url(#shadowG)"/>
 
   <!-- 速度线 -->
   <g stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.7">
-    <line x1="0" y1="20" x2="26" y2="20">
+    <line x1="0" y1="18" x2="24" y2="18">
       <animate attributeName="opacity" values="0;0.85;0" dur="1.1s" repeatCount="indefinite"/>
       <animateTransform attributeName="transform" type="translate" values="8,0;-22,0" dur="1.1s" repeatCount="indefinite"/>
     </line>
-    <line x1="0" y1="36" x2="22" y2="36">
+    <line x1="0" y1="30" x2="20" y2="30">
       <animate attributeName="opacity" values="0;0.6;0" dur="1.1s" begin="-0.55s" repeatCount="indefinite"/>
       <animateTransform attributeName="transform" type="translate" values="8,0;-22,0" dur="1.1s" begin="-0.55s" repeatCount="indefinite"/>
     </line>
@@ -143,20 +149,20 @@
 
   <!-- 车后扬尘 -->
   <g fill="#f7fbff" opacity="0.9">
-    <circle cx="9" cy="106" r="3">
+    <circle cx="44" cy="107" r="2.6">
       <animate attributeName="opacity" values="0.8;0" dur="1.4s" repeatCount="indefinite"/>
-      <animateTransform attributeName="transform" type="translate" values="3,2;-7,-6" dur="1.4s" repeatCount="indefinite"/>
-      <animate attributeName="r" values="1.8;4.6" dur="1.4s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="3,2;-7,-5" dur="1.4s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="1.6;4" dur="1.4s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="6" cy="108" r="2">
+    <circle cx="41" cy="109" r="1.8">
       <animate attributeName="opacity" values="0.7;0" dur="1.4s" begin="-0.7s" repeatCount="indefinite"/>
-      <animateTransform attributeName="transform" type="translate" values="3,1;-6,-5" dur="1.4s" begin="-0.7s" repeatCount="indefinite"/>
-      <animate attributeName="r" values="1.4;3.6" dur="1.4s" begin="-0.7s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="3,1;-6,-4" dur="1.4s" begin="-0.7s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="1.2;3.2" dur="1.4s" begin="-0.7s" repeatCount="indefinite"/>
     </circle>
   </g>
 
   <!-- ===== 小羊 + 单车（左侧主体，等比缩放） ===== -->
-  <g transform="translate(-33.24,-32.26) scale(0.29)">
+  <g transform="translate(10.33,10.7) scale(0.203)">
     <!-- 后轮 -->
       <g transform="translate(250,400)">
         <circle r="88" fill="none" stroke="#2e3440" stroke-width="13"/>
@@ -373,5 +379,11 @@
           </g>
         </g>
       </g>
+  </g>
+
+  <!-- 前景草丛 -->
+  <g stroke="#4f9a4a" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.9">
+    <path d="M2,119 q2,-9 6,-12 M9,119 q0,-8 4,-10 M-4,119 q-2,-7 1,-11"/>
+    <path d="M156,119 q2,-8 5,-11 M162,119 q0,-7 3,-9"/>
   </g>
 </svg>
