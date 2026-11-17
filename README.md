@@ -19,6 +19,7 @@ Here are some ideas to get you started:
 
 <div align="center">
     <img src="https://raw.githubusercontent.com/Niefee/niefee/refs/heads/master/assets/xiao-yang.svg" width="770px" />
+    <img src="https://raw.githubusercontent.com/Niefee/niefee/refs/heads/master/assets/xiao-yang-1.svg" width="770px" />
 </div>
 
 <br/>
@@ -40,19 +41,19 @@ Here are some ideas to get you started:
     </a>
 </div>
 
-<div align="center">
+<!-- <div align="center">
     <picture align="center">
       <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Niefee/niefee/master/assets/github-contribution-grid-snake.svg">
       <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Niefee/niefee/master/assets/github-contribution-grid-snake.svg">
       <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Niefee/niefee/master/assets/github-contribution-grid-snake.svg">
     </picture>
-</div>
+</div> -->
  
 <br/>
 <br/>
 
 
-<div align="center">
+<!-- <div align="center">
     <img alt="Dashboard stats of @Niefee" src="https://card.net.coffee/v1/card.svg?style=sunset&sticker=sunflower&w=600" width="600" height="auto">
-</div>
+</div> -->
 
