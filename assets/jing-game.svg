@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 640" font-family="Segoe UI, Microsoft YaHei, sans-serif">
+  <title>井字棋</title>
+  <rect width="480" height="640" fill="#0b1220"/>
+  <text x="240" y="52" text-anchor="middle" font-size="28" font-weight="bold" fill="#e2e8f0">井字棋</text>
+  <text id="score" x="240" y="88" text-anchor="middle" font-size="14" fill="#94a3b8">X 胜 0 ｜ 平局 0 ｜ O 胜 0</text>
+  <text id="status" x="240" y="126" text-anchor="middle" font-size="18" fill="#f8fafc">轮到 X 落子</text>
+  <g id="board"></g>
+  <line id="winline" x1="0" y1="0" x2="0" y2="0" stroke="#facc15" stroke-width="8" stroke-linecap="round" visibility="hidden"/>
+  <g id="restart" cursor="pointer">
+    <rect x="170" y="584" width="140" height="36" rx="18" fill="#1d4ed8"/>
+    <text x="240" y="607" text-anchor="middle" font-size="16" fill="#ffffff" pointer-events="none">重新开始</text>
+  </g>
+  <script><![CDATA[
+var NS = 'http://www.w3.org/2000/svg';
+var board = document.getElementById('board');
+var statusEl = document.getElementById('status');
+var scoreEl = document.getElementById('score');
+var winline = document.getElementById('winline');
+var LINES = [[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]];
+var state, turn, over, cells = [], marks = [];
+var score = { X: 0, O: 0, D: 0 };
+function make(name, attrs) {
+  var e = document.createElementNS(NS, name);
+  for (var k in attrs) e.setAttribute(k, attrs[k]);
+  return e;
+}
+function center(i) {
+  return [30 + (i % 3) * 142 + 68, 150 + Math.floor(i / 3) * 142 + 68];
+}
+for (var i = 0; i < 9; i++) {
+  (function (i) {
+    var x = 30 + (i % 3) * 142, y = 150 + Math.floor(i / 3) * 142;
+    var r = make('rect', { id: 'c' + i, x: x, y: y, width: 136, height: 136, rx: 12, fill: '#1e293b', stroke: '#334155', 'stroke-width': 1.5, cursor: 'pointer' });
+    var t = make('text', { x: x + 68, y: y + 68, 'text-anchor': 'middle', 'dominant-baseline': 'central', 'font-size': 72, 'font-weight': 'bold', 'pointer-events': 'none', fill: 'transparent' });
+    r.addEventListener('click', function () { place(i); });
+    r.addEventListener('mouseenter', function () { if (!over && !state[i]) r.setAttribute('fill', '#273449'); });
+    r.addEventListener('mouseleave', function () { if (!state[i]) r.setAttribute('fill', '#1e293b'); });
+    board.appendChild(r); board.appendChild(t);
+    cells.push(r); marks.push(t);
+  })(i);
+}
+function updateScore() {
+  scoreEl.textContent = 'X 胜 ' + score.X + ' ｜ 平局 ' + score.D + ' ｜ O 胜 ' + score.O;
+}
+function place(i) {
+  if (over || state[i]) return;
+  state[i] = turn;
+  marks[i].textContent = turn;
+  marks[i].setAttribute('fill', turn === 'X' ? '#38bdf8' : '#f472b6');
+  var win = null;
+  for (var j = 0; j < LINES.length; j++) {
+    var L = LINES[j];
+    if (state[L[0]] && state[L[0]] === state[L[1]] && state[L[1]] === state[L[2]]) { win = L; break; }
+  }
+  if (win) {
+    over = true;
+    score[turn]++;
+    var a = center(win[0]), b = center(win[2]);
+    winline.setAttribute('x1', a[0]); winline.setAttribute('y1', a[1]);
+    winline.setAttribute('x2', b[0]); winline.setAttribute('y2', b[1]);
+    winline.setAttribute('visibility', 'visible');
+    for (var k = 0; k < 3; k++) cells[win[k]].setAttribute('fill', '#31415e');
+    statusEl.textContent = turn + ' 获胜！';
+    statusEl.setAttribute('fill', '#facc15');
+  } else if (state.every(function (v) { return v; })) {
+    over = true; score.D++;
+    statusEl.textContent = '平局';
+    statusEl.setAttribute('fill', '#94a3b8');
+  } else {
+    turn = turn === 'X' ? 'O' : 'X';
+    statusEl.textContent = '轮到 ' + turn + ' 落子';
+  }
+  updateScore();
+}
+function reset() {
+  state = ['', '', '', '', '', '', '', '', ''];
+  turn = 'X'; over = false;
+  for (var i = 0; i < 9; i++) {
+    marks[i].textContent = '';
+    marks[i].setAttribute('fill', 'transparent');
+    cells[i].setAttribute('fill', '#1e293b');
+  }
+  winline.setAttribute('visibility', 'hidden');
+  statusEl.textContent = '轮到 X 落子';
+  statusEl.setAttribute('fill', '#f8fafc');
+}
+document.getElementById('restart').addEventListener('click', reset);
+reset();
+  ]]></script>
+</svg>
